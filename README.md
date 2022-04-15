@@ -20,7 +20,7 @@ The project is a part of my React learning path from the ground up to make dynam
 ## Technologies
 
 - React 18.0.0
-- React-Router-Dom" 6.3.0
+- React-Router-Dom 6.3.0
 - Firebase 8.5
 
 
@@ -50,7 +50,7 @@ You may also see any lint errors in the console.
 
 ## Inspiration
 
-Project based on React Developer Course with Redux, Hooks, GraphQL by [@ZTM](https://github.com/zero-to-mastery)
+Project based on Build Web Apps with React & Firebase by The Net Ninja 
 
 ## Contact
 
