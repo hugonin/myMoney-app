@@ -6,14 +6,14 @@ import styles from "./SignUp.module.css"
 
 export default function SignUp() {
   const [displayName, setDisplayName] = useState("")
-  const [mail, setEmail] = useState("")
+  const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
   const { signup, isPending, error } = useSignup()
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    signup(mail, password, displayName)
+    signup(email, password, displayName)
   }
   return (
     <form onSubmit={handleSubmit} className={styles["signup-form"]}>
@@ -34,7 +34,7 @@ export default function SignUp() {
           type="email"
           autoComplete="email"
           onChange={(e) => setEmail(e.target.value)}
-          value={mail}
+          value={email}
          />
       </label>
 
@@ -48,7 +48,7 @@ export default function SignUp() {
          />
       </label>
       { !isPending && <button className="btn">Sign Up</button>}
-      { isPending && <button className="brn" disabled>loading</button>}
+      { isPending && <button className="btn" disabled>loading</button>}
       { error && <p>{error}</p>}
 
     </form>
